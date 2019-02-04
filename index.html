@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="navbar">
+                <button class="menu" id="icon-menu" onclick="toggleClass()"></button>
+                <label for="icon-menu">
+                    <div class="hamburger">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+
+                <div class="settings">
+                    <span class="setting" id="office">Личный кабинет</span>
+                    <span class="setting" id="ruble">Рубль</span>
+                    <span class="setting" id="ru">Ru</span>
+                    <span class="tel">8 800 500-61-05<br><span class="support">Круглосуточная поддержка</span></span>
+                </div>
+            </div>
+            <nav id="nav" role='navigation'>
+                <ul>
+                    <li><a class="menu-item" href="#">Популярные маршруты</a></li>
+                    <li><a class="menu-item" href="#">Расписание рейсов</a></li>
+                    <li><a class="menu-item" href="#">Забронированные рейсы</a></li>
+                    <li><a class="menu-item" href="#">Вход для партнеров</a></li>
+                    <li><a class="menu-item" href="#">О компании</a></li>
+                    <li><a class="menu-item" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo"></div>
+            <div class="headline-small">Морские прогулки</div>
+            <div class="headline">по чёрному морю</div>
+            <button class="button">Выбрать круиз</button>
+            <div class="figure_1"></div>
+        </div>
+    </header>
+
+    <div class="catalog">
+        <div class="catalog-header">Каталог круизов</div>
+        <p><form action="#" method="post">
+        <label for="sort">Сортировать круизы по</label>
+        <select class="select" id="sort" name="sort">
+            <option selected value="цена">цене</option>
+            <option value="маршрут">маршруту</option>
+            <option value="продолжительность">продолжительности</option>
+        </select>
+    </form></p>
+    </div>
+
+    <div class="main-content">
+
+        <!--1-->
+        <div class="content flag flag-blue">
+            <img class="content-image det" src="images/lighthouse.png">
+            <img class="content-image mob" src="images/lighthouse-mob.png">
+            <span class="flag-text">Хит продаж</span>
+            <div class="description" id="anapa">
+                <span class="description-head">Морской круиз в Анапу</span>
+                <a class="link" href="#"><img src="images/link.svg"></a> <br>
+                <span class="description-bold">Маршрут:</span>
+                <span class="description-text">Сочи-Лазаревское-Геленджик-Анапа</span><br>
+                <span class="description-bold">Продолжительность:</span>
+                <span class="description-text">10 ч. 0 мин.</span><br>
+                <span class="price">49 000 руб.</span>
+            </div>
+        </div>
+        <!--2-->
+
+        <div class="content">
+            <img class="content-image det" src="images/novorossiys.png">
+            <img class="content-image mob" src="images/novorossiysk-mob.png">
+            <div class="description" id="novoros">
+                <span class="description-head">Морской круиз в Новороссийск</span>
+                <a class="link" href="#"><img src="images/link.svg"></a><br>
+                <span class="description-bold">Маршрут:</span>
+                <span class="description-text">Сочи-Геленджик-Новороссийск-Геленджик-Сочи</span><br>
+                <span class="description-bold">Продолжительность:</span>
+                <span class="description-text">13 ч. 0 мин.</span><br>
+                <span class="price">14 800 руб.</span>
+            </div>
+        </div>
+        <!--3-->
+        <div class="content flag flag-red">
+            <img class="content-image det" src="images/sochi2.png">
+            <img class="content-image mob" src="images/sochi2-mob.png">
+            <span class="flag-text">акция</span>
+            <div class="description" id="sochi">
+                <span class="description-head">Обзорная морская прогулка с экскурсией</span>
+                <a class="link" href="#"><img src="images/link.svg"></a> <br>
+                <span class="description-bold">Маршрут:</span>
+                <span class="description-text">Сочи-Адлер-Сочи (без высадки)</span><br>
+                <span class="description-bold">Продолжительность:</span>
+                <span class="description-text">1 ч. 0 мин.</span><br>
+                <span class="price">5 000 руб.</span>
+                <span class="discount">15000 руб.</span>
+            </div>
+        </div>
+        <!--4-->
+        <div class="content flag flag-red">
+            <img class="content-image det" src="images/gelendgik.png">
+            <img class="content-image mob" src="images/gelendgik-mob.png">
+            <span class="flag-text">скидка 10%</span>
+            <div class="description" id="tuapse">
+                <span class="description-head">Морская прогулка в Геленджик</span>
+                <a class="link" href="#"><img src="images/link.svg"></a> <br>
+                <span class="description-bold">Маршрут:</span>
+                <span class="description-text">Сочи-Туапсе-Геленджик</span><br>
+                <span class="description-bold">Продолжительность:</span>
+                <span class="description-text">12 ч. 30 мин.</span><br>
+                <span class="price">7 000 руб.</span>
+                <span class="discount">10000 руб.</span>
+            </div>
+        </div>
+
+        <!--5-->
+        <div class="content det">
+            <img class="content-image det" src="images/sea.png">
+            <div class="description" id="abrau">
+                <span class="description-head">Морская прогулка в Абрау-Дюрсо</span>
+                <a class="link" href="#"><img src="images/link.svg"></a> <br>
+                <span class="description-bold">Маршрут:</span>
+                <span class="description-text">Сочи-Абрау-Дюрсо</span><br>
+                <span class="description-bold">Продолжительность:</span>
+                <span class="description-text">11 ч. 0 мин.</span><br>
+                <span class="price">14 800 руб.</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="button-center"> <button class="button">Больше круизов</button></div>
+
+    <div id="popup">
+        <button id="x">X</button>
+        <div class="prev">
+            <div id="bigPicture">
+                <img id="1" src="images/big/sea-popup.png">
+            </div>
+            <div class="small-picture">
+                <img class="smallPic" id="img_1" src="images/small/small_1.png">
+                <img class="smallPic"  id="img_2" src="images/small/small_2.png">
+                <img class="smallPic"  id="img_3" src="images/small/small_3.png">
+                <img class="smallPic"  id="img_4" src="images/small/small_4.png">
+            </div>
+        </div>
+        <div class="description">
+            <span class="description-head">Морская прогулка в Абрау-Дюрсо</span>
+            <a class="link" href="#"><img src="images/link.svg"></a> <br>
+            <span class="description-bold">Маршрут:</span>
+            <span class="description-text">Сочи-Абрау-Дюрсо</span><br>
+            <span class="description-bold">Продолжительность:</span>
+            <span class="description-text">11 ч. 0 мин.</span><br>
+            <span class="description-bold">Расписание:</span><br>
+            <span class="description-text">
+                Отправление из Сочи ежедневно в 10.00, 11.40, 13.20, 15.00, 16.40
+                Отправление из Абрау-Дюрсо ежедневно в 12.12, 14.05, 15.45, 17.25, 19.05
+                Продолжительность 11 ч. 0 мин. из которых 10 часов - морская прогулка (туда и обратно)
+                от 1 часа 30 мин - свободное время в Ласточкином гнезде
+                Причал отправления/прибытия:
+                набережная Ленина, причал №8, теплоход "Азов".
+            </span><br>
+            <span class="price">14 800 руб.</span>
+            <button class="button">Бронирование</button>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-block footer-nav">
+            <a href="#"><span class="footer-nav-item">Вход для партнеров</span></a><br>
+            <a href="#"><span class="footer-nav-item">О компании</span></a><br>
+            <a href="#"><span class="footer-nav-item">Контакты</span></a><br>
+        </div>
+
+        <div class="footer-block cocio">
+            <span class="footer-nav-item">Будь на связи</span><br>
+            <a class="cocio-ico" href="#"><img src="images/vk.png"></a>
+            <a  class="cocio-ico" href="#"><img src="images/ok.png"></a>
+            <a  class="cocio-ico" href="#"><img src="images/yt.png"></a>
+            <a  class="cocio-ico" href="#"><img src="images/insta.png"></a>
+        </div>
+
+        <div class="footer-block copy">
+            <span class="tel">8 800 500-61-05<br><span class="support">Круглосуточная поддержка</span></span><br>
+            <span class="footer-nav-item copyrait">&copy; 2016 ООО "Городские круизы"</span>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

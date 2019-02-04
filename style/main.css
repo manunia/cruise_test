@@ -1,0 +1,516 @@
+@font-face {
+    font-family: Roboto Slab;
+    src: url(../fonts/roboto-slab-regular.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway-regular.ttf);
+}
+@font-face {
+    font-family: SocialIco;
+    src: url(../fonts/Socialico.ttf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    background-color: #f3f3f3;
+}
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.header-container {
+    background: url("../images/sochi.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    float: left;
+    position: relative;
+    text-align: center;
+    left: -1px;
+    top: -1px;
+    width: 100%;
+    height: 650px;
+    z-index: 3;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+   list-style-type: none;
+    text-align: left;
+}
+#icon-menu {
+    cursor:pointer;
+}
+#icon-menu:hover {
+    color: #e1e1e1;
+}
+.navbar {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+}
+.menu {
+    display: none;
+}
+.hamburger {
+    margin: 35px 266px auto;
+    width: 22px;
+    height: 23px;
+    position: relative;
+}
+@media all and (min-width: 240px) and (max-width: 1234px) {
+    .hamburger {
+        margin: 35px 28px auto;
+        z-index: 3;
+    }
+}
+.hamburger .bar {
+    padding: 0;
+    width: 22px;
+    height: 2px;
+    background-color: #0d3351;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+.bar1 {
+    top: 0;
+}
+.bar2 {
+    top: 10.5px;
+}
+.bar4 {
+    bottom: 0;
+}
+.menu-item {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    color: rgb(255, 255, 255);
+    line-height: 3.333;
+    text-align: left;
+}
+nav {
+    background-color: rgb(13, 51, 81);
+    position: absolute;
+    left: 266px;
+    top: -100%;
+    width: 420px;
+    height: 413px;
+    transition-timing-function: ease;
+}
+@media all and (min-width: 240px) and (max-width: 1234px) {
+    nav {
+       left: 27px;
+        width: 318px;
+    }
+}
+.setting {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    margin-right: 60px;
+}
+@media all and (min-width: 774px) and (max-width: 761px) {
+    .setting {
+        margin-right: 27px;
+    }
+}
+#office:before {
+    content: "...................";
+    color: transparent;
+    background: url("../images/user.svg") no-repeat;
+    position: relative;
+    left: 31px;
+    top: 1px;
+}
+#ruble:before {
+    content: ".................";
+    color: transparent;
+    background: url("../images/ruble.svg") no-repeat;
+    position: relative;
+    left: 31px;
+    top: 2px;
+}
+
+.tel {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    font-weight: bold;
+    position: absolute;
+    width: 130px;
+    text-align: left;
+}
+.support {
+    font-size: 10px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+}
+.setting:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 7px;
+    top: 11px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgb(13, 51, 81);
+}
+.settings {
+    position: absolute;
+    right: 0px;
+    top: 37px;
+    width: 61%;
+}
+@media all and (min-width: 774px) and (max-width: 1288px) {
+    .settings {
+        width: 100%;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 773px) {
+    .settings {
+        display: none;
+    }
+}
+.logo {
+    background: url("../images/logo.png") no-repeat;
+    width: 88px;
+    height: 88px;
+    display: inline-block;
+    margin-top: 83px;
+}
+.headline{
+    font-size: 100px;
+    font-family: 'Roboto Slab Regular';
+    color: rgb(13, 51, 81);
+    text-transform: uppercase;
+    line-height: 0.48;
+    margin-bottom: 60px;
+}
+@media all and (min-width: 774px) and (max-width: 1234px) {
+    .headline {
+        font-size: 72px;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 773px) {
+    .headline {
+        font-size: 50px;
+        line-height: 0.96;
+    }
+}
+.headline-small {
+    font-size: 36px;
+    font-family: "Roboto Slab";
+    color: rgb(13, 51, 81);
+    margin: 20px 0 50px 0;
+}
+@media all and (min-width: 774px) and (max-width: 1234px) {
+    .headline-small {
+        font-size: 36px;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 773px) {
+    .headline-small {
+        font-size: 20px;
+    }
+}
+
+button {
+    border-width: 0;
+    border-style: none;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: rgb(51, 199, 253);
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 202px;
+    height: 47px;
+
+}
+.button:hover {
+    background-color: rgb(19, 176, 233);
+}
+.button:active {
+    background-color: rgb(100, 214, 255);
+}
+.header-container:after {
+    background: url("../images/figure_1.svg") no-repeat;;
+    position: absolute;
+    left: 614px;
+    width: 68px;
+    height: 295px;
+    content: "";
+}
+@media all and (min-width: 774px) and (max-width: 1234px) {
+    .header-container:after {
+        left: 345px;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 773px) {
+    .header-container:after {
+        left: 283px;
+    }
+}
+.main-content {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 2;
+    column-gap: 10px;
+}
+@media all and (min-width: 240px) and (max-width: 654px) {
+    .main-content{
+        width: 80%;
+        column-count: 1;
+    }
+}
+.catalog {
+    width: 100%;
+    float: left;
+}
+.catalog-header {
+    font-size: 36px;
+    font-family: "Roboto Slab";
+    color: rgb(13, 51, 81);
+    line-height: 1.333;
+    text-align: center;
+    margin-top: 117px;
+}
+form {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    line-height: 1.714;
+    text-align: center;
+}
+.select {
+    background-image: url("../images/select.svg");
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
+    border: none;
+    width: 63px;
+    height: 19px;
+    background-position: right 13px center;
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    font-style: italic;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+}
+.content {
+    width: 555px;
+    margin: 15px;
+    display: inline-grid;
+    vertical-align: top;
+}
+@media all and (min-width: 774px) and (max-width: 1234px) {
+    .content {
+        width: 345px;
+    }
+}
+@media all and (min-width: 240px) and (max-width: 773px) {
+    .content {
+        width: 290px;
+    }
+}
+.content-image {
+    width: inherit;
+}
+.mob {
+    display: none;
+}
+@media all and (min-width: 240px) and (max-width: 1234px) {
+    .mob {
+        display: block;
+    }
+    .det {
+        display: none;
+    }
+}
+.description {
+    background-color: #ffffff;
+    padding: 14px 41px 24px;
+}
+@media all and (min-width: 774px) and (max-width: 1234px) {
+    .description {
+        height: 239px;
+    }
+}
+.description-head {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    color: rgb(0, 162, 221);
+    line-height: 2.667;
+    text-align: left;
+}
+
+.link {
+    margin-left: 16px;
+}
+.description-bold {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    line-height: 1.6;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.description-text {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    line-height: 1.6;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+.price {
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    color: rgb(13, 51, 81);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.flag {
+    position: relative;
+}
+.flag:before {
+    content: "";
+    width: 0; height: 0;
+    border-width: 82px 42px 21px;
+    border-style: solid;
+    position: absolute;
+    top: -8px;
+    right: 46px
+}
+.flag-blue:before {
+    border-color: rgb(51, 199, 253) rgb(51, 199, 253) transparent;
+}
+.flag-red:before {
+    border-color: #f20542 #f20542 transparent;
+}
+.flag-text {
+    position: absolute;
+    top: 20px;
+    right: 58px;
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.286;
+    text-align: center;
+    width: 60px;
+}
+.discount {
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    color: rgba(13, 51, 81, 0.549);
+    text-decoration: line-through rgba(13, 51, 81, 0.549);
+    margin-left: 28px;
+}
+.button-center {
+    width: 202px;
+    margin: 12px auto 62px;
+}
+.button-center:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 162px;
+    top: -39px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #ffffff;
+}
+footer {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+@media all and (min-width: 240px) and (max-width: 818px) {
+    footer {
+        flex-direction: column;
+        padding-bottom: 41px;
+        padding-top: 32px;
+    }
+}
+.cocio-ico {
+    margin-right: 11px;
+}
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 130px;
+}
+.copyrait {
+    line-height: 4;
+}
+.cocio {
+    line-height: 2;
+}
+@media all and (min-width: 240px) and (max-width: 817px) {
+    .copy {
+        height: 74px;
+        align-items: center;
+    }
+    .cocio {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+.footer-nav-item {
+    font-size: 14px;
+    font-family: "Raleway";
+    color: rgb(13, 51, 81);
+    line-height: 1.714;
+    text-align: left;
+}
+@media all and (min-width: 240px) and (max-width: 817px) {
+    .footer-nav {
+        display: none;
+    }
+}
+#popup {
+    display: none;
+    float: left;
+    padding: 88px 24px 113px;
+    z-index: 3;
+    width: 60%;
+    position: absolute;
+    top: 865px;
+    left: 324px;
+    background-color: white;
+}
+#x {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(13, 51, 81);
+    opacity: 0.502;
+    position: inherit;
+    left: 789px;
+    top: 22px;
+    width: 15px;
+    height: 17px;
+}
+
+
